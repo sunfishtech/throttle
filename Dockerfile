@@ -1,4 +1,4 @@
-FROM dockerfile/nodejs
+FROM node:5.4.0-wheezy
 
 RUN mkdir -p /usr/src/app  
 WORKDIR /usr/src/app  

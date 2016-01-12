@@ -34,6 +34,7 @@ var params = {
 //
 var proxy = httpProxy.createProxyServer();
 
+console.log("here we go");
 
 http.createServer(function (req,res){
   extractRequest(req).then(function(serialized){
@@ -52,7 +53,7 @@ http.createServer(function (req,res){
   });
 },function(err){
   console.log(err);
-}).listen(8000);
+}).listen(80);
 
 //
 // Create your server that makes an operation that waits a while
