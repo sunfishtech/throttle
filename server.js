@@ -8,9 +8,10 @@ var request = require('superagent');
 var plivo = require('plivo');
 var url = require('url');
 
+
 var sms = plivo.RestAPI({
-  authId:'MANJC0NZJKNJE5YJYWZG',
-  authToken:'ZWUzMzMyMWE0ZmQzYjA2NTM0MzZiZDg2ZmQxMzJl'
+  authId:process.env.PLIVO_AUTH_ID,
+  authToken:process.env.PLIVO_AUTH_TOKEN
 });
 
 var params = {
