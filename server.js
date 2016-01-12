@@ -35,7 +35,7 @@ var params = {
 //
 var proxy = httpProxy.createProxyServer();
 
-console.log("here we go");
+console.log("here we go, listening on port 8000");
 
 http.createServer(function (req,res){
   extractRequest(req).then(function(serialized){
